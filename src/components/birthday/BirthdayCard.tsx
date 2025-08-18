@@ -17,7 +17,7 @@ export function BirthdayCard() {
     }
 
     return (
-        <div className="relative">
+        <div className="relative container mx-auto px-4">
             {showConfetti && (
                 <div className="absolute inset-0 pointer-events-none overflow-hidden">
                     {[...Array(40)].map((_, i) => (
@@ -73,7 +73,7 @@ export function BirthdayCard() {
 
                     <div className="bg-gradient-to-r from-orange-50 to-pink-50 dark:from-orange-900/30 dark:to-pink-900/30 rounded-lg p-4">
                         <p className="text-sm text-gray-500 dark:text-gray-300 italic">
-                            "Like the lotus that blooms pure in the water, may your life always be filled with grace, love, and beauty. Happy Birthday, my dearest!"
+                            "Like the lotus that blooms pure in the water, like the sunflower facing the sun, may your life always be filled with grace, love, and beauty. Happy Birthday, my dearest!"
                         </p>
                     </div>
 

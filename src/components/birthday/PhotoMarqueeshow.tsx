@@ -11,23 +11,23 @@ const reviews = [
     },
     {
         id: 3,
-        img: "/flowershop.png",
+        img: "/d2.JPG",
     },
     {
         id: 4,
-        img: "/vercel.svg",
+        img: "/flowershop.png",
     },
     {
         id: 5,
-        img: "/window.svg",
+        img: "/d1.png",
     },
     {
         id: 6,
-        img: "/globe.svg",
+        img: "/d3.png",
     },
 ];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
+// const firstRow = reviews.slice(0, reviews.length / 2);
 // const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({
@@ -54,7 +54,7 @@ export function PhotoMarqueeshow() {
     return (
         <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
             <Marquee pauseOnHover className="[--duration:20s]">
-                {firstRow.map((id) => (
+                {reviews.map((id) => (
                     <ReviewCard key={id.id} {...id} />
                 ))}
             </Marquee>
