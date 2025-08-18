@@ -16,7 +16,7 @@ export default function HeroBanner() {
                         <div className="absolute -inset-4 bg-gradient-to-r from-pink-400 via-purple-400 to-yellow-400 rounded-3xl blur-sm opacity-75"></div>
                         <div className="relative bg-white p-4 rounded-3xl shadow-2xl">
                             <img
-                                src="/mm.jpg"
+                                src="/mm.JPG"
                                 alt="Birthday celebration"
                                 className="rounded-2xl w-full h-auto border-4 border-white shadow-lg"
                             />
