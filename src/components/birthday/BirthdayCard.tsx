@@ -55,7 +55,7 @@ export function BirthdayCard() {
                     <div className="text-6xl animate-pulse">🌸</div>
 
                     <div className="space-y-2">
-                        <h1 className="text-4xl font-bold bg-gradient-to-r from-orange-400 via-pink-400 to-orange-500 bg-clip-text text-transparent animate-pulse">
+                        <h1 className="text-4xl font-bold bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-500 bg-clip-text text-transparent animate-pulse">
                             រីករាយថ្ងៃកំណើត, My Lotus 🌸
                         </h1>
                         <p className="text-lg text-gray-600 dark:text-gray-300">
@@ -79,7 +79,7 @@ export function BirthdayCard() {
 
                     <div
                         onClick={handleCelebrate}
-                        className="w-full bg-gradient-to-r from-orange-400 to-pink-400 hover:from-orange-500 hover:to-pink-500 text-white font-semibold py-3 rounded-lg transform transition-all duration-200 hover:scale-105 active:scale-95"
+                        className="w-full bg-gradient-to-r from-orange-400 to-yellow-400 hover:from-orange-500 hover:to-yellow-500 text-white font-semibold py-3 rounded-lg transform transition-all duration-200 hover:scale-105 active:scale-95"
                     >
                         🌸 Celebrate with Petals 🌸
                     </div>
