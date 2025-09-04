@@ -28,7 +28,7 @@ export function FlowerSummary() {
     return (
         <div className="container mx-auto py-10">
             <h1 className="text-3xl md:text-6xl text-center mb-10 text-orange-500 break-words">
-                꼬마아가씨
+                꼬마아가씨, 사랑해
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8 items-center sm:items-start relative z-10">
 
@@ -79,7 +79,7 @@ export function FlowerSummary() {
                 {/* Birthday Quote Section */}
                 <div className="text-center mt-10 space-y-6 order-1 md:order-2 ">
                     <h2 className="text-2xl md:text-3xl font-semibold text-orange-600 italic">
-                        "너는 나의 sunshine, my sunflower, my happiness."
+                        "너는 나의 sunshine, my sunflower, 나의 happiness."
                     </h2>
 
                     <p className="text-lg md:text-xl text-gray-700">

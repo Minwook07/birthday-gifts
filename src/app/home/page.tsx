@@ -2,10 +2,14 @@ import { FlowerSummary } from "@/components/birthday/FlowerSummary";
 import { BirthdayCard } from "../../components/birthday/BirthdayCard";
 import HeroBanner from "../../components/birthday/HeroBanner";
 import { PhotoMarqueeshow } from "@/components/birthday/PhotoMarqueeshow";
+import Header from "@/components/layout/Header";
 
 export default function HomePage() {
     return (
         <div className="relative min-h-screen bg-amber-50 overflow-hidden">
+            <nav>
+                <Header />
+            </nav>
             <div className="absolute inset-0 pointer-events-none opacity-10">
                 {[...Array(8)].map((_, i) => (
                     <div

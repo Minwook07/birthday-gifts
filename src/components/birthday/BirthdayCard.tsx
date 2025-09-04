@@ -23,7 +23,7 @@ export function BirthdayCard() {
                     {[...Array(40)].map((_, i) => (
                         <div
                             key={i}
-                            className="absolute w-3 h-3 bg-pink-300 rounded-full animate-bounce opacity-80"
+                            className="absolute w-3 h-3 bg-pink-300/80 rounded-full animate-bounce"
                             style={{
                                 left: `${Math.random() * 100}%`,
                                 animationDelay: `${Math.random() * 2}s`,
@@ -55,7 +55,7 @@ export function BirthdayCard() {
                     <div className="text-6xl animate-pulse">🌸</div>
 
                     <div className="space-y-2">
-                        <h1 className="text-4xl font-bold bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-500 bg-clip-text text-transparent animate-pulse">
+                        <h1 className="text-4xl font-bold bg-orange-400 bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-500 bg-clip-text text-transparent animate-pulse">
                             រីករាយថ្ងៃកំណើត, My Lotus 🌸
                         </h1>
                         <p className="text-lg text-gray-600 dark:text-gray-300">
@@ -71,7 +71,7 @@ export function BirthdayCard() {
                         <span className="animate-bounce" style={{ animationDelay: "0.4s" }}>🌸</span>
                     </div>
 
-                    <div className="bg-gradient-to-r from-orange-50 to-pink-50 dark:from-orange-900/30 dark:to-pink-900/30 rounded-lg p-4">
+                    <div className="bg-orange-50 bg-gradient-to-r from-orange-50 to-pink-50 dark:from-orange-900/30 dark:to-pink-900/30 rounded-lg p-4">
                         <p className="text-sm text-gray-500 dark:text-gray-300 italic">
                             "Like the lotus that blooms pure in the water, like the sunflower facing the sun, may your life always be filled with grace, love, and beauty. Happy Birthday, my dearest!"
                         </p>
@@ -79,12 +79,12 @@ export function BirthdayCard() {
 
                     <div
                         onClick={handleCelebrate}
-                        className="w-full bg-gradient-to-r from-orange-400 to-yellow-400 hover:from-orange-500 hover:to-yellow-500 text-white font-semibold py-3 rounded-lg transform transition-all duration-200 hover:scale-105 active:scale-95"
+                        className="w-full bg-orange-400 bg-gradient-to-r from-orange-400 to-yellow-400 hover:from-orange-500 hover:to-yellow-500 text-white font-semibold py-3 rounded-lg transform transition-all duration-200 hover:scale-105 active:scale-95"
                     >
-                        🌸 Celebrate with Petals 🌸
+                        🌸 កូនជ្រូកតូច 🌸
                     </div>
 
-                    <div className="text-xs text-gray-400">From me, with endless love 💕</div>
+                    <div className="text-xs text-gray-400">From wuchen, with endless love 💕</div>
                 </div>
             </div>
         </div>

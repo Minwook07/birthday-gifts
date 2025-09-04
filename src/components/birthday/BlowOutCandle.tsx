@@ -82,15 +82,15 @@ export default function BlowOutCandle() {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center p-4">
+        <div className="min-h-screen bg-purple-900 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center p-4">
             <div className="text-center">
                 <div className="relative">
                     {/* Cake Base */}
                     <div className="relative mx-auto">
                         {/* Bottom Cake Layer */}
-                        <div className="w-72 h-24 bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 rounded-lg mx-auto relative shadow-xl border-2 border-amber-700">
+                        <div className="w-72 h-24 bg-purple-900 bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 rounded-lg mx-auto relative shadow-xl border-2 border-amber-700">
                             {/* Frosting */}
-                            <div className="absolute -top-2 left-0 right-0 h-6 bg-gradient-to-r from-pink-300 via-pink-200 to-pink-300 rounded-t-lg border-2 border-pink-400"></div>
+                            <div className="absolute -top-2 left-0 right-0 h-6 bg-purple-900 bg-gradient-to-r from-pink-300 via-pink-200 to-pink-300 rounded-t-lg border-2 border-pink-400"></div>
                             {/* Decorative dots */}
                             <div className="absolute top-2 left-4 w-3 h-3 bg-red-400 rounded-full"></div>
                             <div className="absolute top-2 right-4 w-3 h-3 bg-blue-400 rounded-full"></div>
@@ -98,30 +98,30 @@ export default function BlowOutCandle() {
                         </div>
 
                         {/* Top Cake Layer */}
-                        <div className="w-56 h-20 bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-400 rounded-lg mx-auto relative -mt-2 shadow-xl border-2 border-orange-500">
+                        <div className="w-56 h-20 bg-purple-900 bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-400 rounded-lg mx-auto relative -mt-2 shadow-xl border-2 border-orange-500">
                             {/* Frosting */}
-                            <div className="absolute -top-2 left-0 right-0 h-6 bg-gradient-to-r from-blue-300 via-blue-200 to-blue-300 rounded-t-lg border-2 border-blue-400"></div>
+                            <div className="absolute -top-2 left-0 right-0 h-6 bg-purple-900 bg-gradient-to-r from-blue-300 via-blue-200 to-blue-300 rounded-t-lg border-2 border-blue-400"></div>
                             {/* Decorative swirls */}
-                            <div className="absolute top-1 left-6 w-4 h-2 bg-white rounded-full opacity-80"></div>
-                            <div className="absolute top-1 right-6 w-4 h-2 bg-white rounded-full opacity-80"></div>
-                            <div className="absolute top-1 left-1/2 transform -translate-x-1/2 w-4 h-2 bg-white rounded-full opacity-80"></div>
+                            <div className="absolute top-1 left-6 w-4 h-2 bg-white/80 rounded-full"></div>
+                            <div className="absolute top-1 right-6 w-4 h-2 bg-white/80 rounded-full"></div>
+                            <div className="absolute top-1 left-1/2 transform -translate-x-1/2 w-4 h-2 bg-white/80 rounded-full"></div>
                         </div>
 
                         <div className="absolute -top-20 left-1/2 transform -translate-x-1/2">
                             {/* Wick - more realistic black wick */}
                             <div className="w-1 h-3 bg-gray-800 mx-auto -mt-1 rounded-sm"></div>
                             {/* Candle stick - more realistic proportions and colors */}
-                            <div className="w-4 h-16 bg-gradient-to-b from-red-400 via-red-500 to-red-600 rounded-sm mx-auto shadow-lg border border-red-700 relative">
+                            <div className="w-4 h-16 bg-purple-900 bg-gradient-to-br from-red-400 via-red-500 to-red-600 rounded-sm mx-auto shadow-lg border border-red-700 relative">
                                 {/* Candle texture lines */}
-                                <div className="absolute top-2 left-0 right-0 h-px bg-red-700 opacity-30"></div>
-                                <div className="absolute top-6 left-0 right-0 h-px bg-red-700 opacity-30"></div>
-                                <div className="absolute top-10 left-0 right-0 h-px bg-red-700 opacity-30"></div>
-                                <div className="absolute top-14 left-0 right-0 h-px bg-red-700 opacity-30"></div>
+                                <div className="absolute top-2 left-0 right-0 h-px bg-red-700/30"></div>
+                                <div className="absolute top-6 left-0 right-0 h-px bg-red-700/30"></div>
+                                <div className="absolute top-10 left-0 right-0 h-px bg-red-700/30"></div>
+                                <div className="absolute top-14 left-0 right-0 h-px bg-red-700/30"></div>
                             </div>
 
                             {/* Melted wax drips */}
-                            <div className="absolute top-0 left-0 w-1 h-3 bg-red-300 rounded-full opacity-60"></div>
-                            <div className="absolute top-2 right-0 w-1 h-2 bg-red-300 rounded-full opacity-60"></div>
+                            <div className="absolute top-0 left-0 w-1 h-3 bg-red-300/60 rounded-full"></div>
+                            <div className="absolute top-2 right-0 w-1 h-2 bg-red-300/60 rounded-full"></div>
 
 
 
@@ -144,7 +144,7 @@ export default function BlowOutCandle() {
                                         {/* Flame core - bright center */}
                                         <div className="absolute top-3 left-1/2 transform -translate-x-1/2 w-1 h-3 bg-yellow-100 rounded-full animate-pulse"></div>
                                         {/* Flame glow */}
-                                        <div className="absolute -inset-3 bg-yellow-300 rounded-full opacity-20 blur-md animate-pulse"></div>
+                                        <div className="absolute -inset-3 bg-yellow-300/20 rounded-full blur-md animate-pulse"></div>
                                     </div>
                                 </div>
                             )}
@@ -152,9 +152,9 @@ export default function BlowOutCandle() {
                             {/* Smoke when blown out */}
                             {isBlownOut && (
                                 <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                                    <div className="w-1 h-10 bg-gradient-to-t from-gray-500 to-transparent rounded-full opacity-70 animate-pulse"></div>
-                                    <div className="absolute top-0 left-1 w-1 h-8 bg-gradient-to-t from-gray-400 to-transparent rounded-full opacity-50 animate-pulse delay-100"></div>
-                                    <div className="absolute top-2 left-2 w-1 h-6 bg-gradient-to-t from-gray-300 to-transparent rounded-full opacity-30 animate-pulse delay-200"></div>
+                                    <div className="w-1 h-10 bg-gradient-to-t from-gray-500/70 to-transparent rounded-full animate-pulse"></div>
+                                    <div className="absolute top-0 left-1 w-1 h-8 bg-gradient-to-t from-gray-400/50 to-transparent rounded-full animate-pulse delay-100"></div>
+                                    <div className="absolute top-2 left-2 w-1 h-6 bg-gradient-to-t from-gray-300/30 to-transparent rounded-full animate-pulse delay-200"></div>
                                 </div>
                             )}
                         </div>
@@ -167,7 +167,7 @@ export default function BlowOutCandle() {
                                 <button
                                     onClick={handleBlowCandle}
                                     disabled={isBlowing}
-                                    className="px-8 py-3 bg-gradient-to-r from-red-500 to-pink-500 text-white font-bold rounded-full shadow-lg hover:from-red-600 hover:to-pink-600 transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                                    className="px-8 py-3 bg-purple-900 bg-gradient-to-r from-red-500 to-pink-500 text-white font-bold rounded-full shadow-lg hover:from-red-600 hover:to-pink-600 transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                                 >
                                     {isBlowing ?
                                         (
@@ -185,8 +185,8 @@ export default function BlowOutCandle() {
                                 <button
                                     onClick={toggleVoiceListening}
                                     className={`px-6 py-2 font-semibold rounded-full shadow-lg transform hover:scale-105 transition-all duration-200 cursor-pointer ${isListening
-                                        ? "bg-gradient-to-r from-green-500 to-emerald-500 text-white animate-pulse"
-                                        : "bg-gradient-to-r from-blue-500 to-cyan-500 text-white hover:from-blue-600 hover:to-cyan-600"
+                                        ? "bg-purple-900 bg-gradient-to-r from-green-500 to-emerald-500 text-white animate-pulse"
+                                        : "bg-purple-900 bg-gradient-to-r from-blue-500 to-cyan-500 text-white hover:from-blue-600 hover:to-cyan-600"
                                         }`}
                                 >
                                     {isListening ? (
@@ -203,7 +203,7 @@ export default function BlowOutCandle() {
                         ) : (
                             <button
                                 onClick={handleRelight}
-                                className="px-8 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-bold rounded-full shadow-lg hover:from-yellow-600 hover:to-orange-600 transform hover:scale-105 transition-all duration-200 cursor-pointer"
+                                className="px-8 py-3 bg-purple-900 bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-bold rounded-full shadow-lg hover:from-yellow-600 hover:to-orange-600 transform hover:scale-105 transition-all duration-200 cursor-pointer"
                             >
                                 <Flame size={30} className="inline mr-2" /> បំភ្លឺទៀនឡើងវិញ
                             </button>
