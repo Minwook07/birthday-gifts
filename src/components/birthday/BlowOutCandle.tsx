@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react"
 import { useRouter } from "next/navigation"
-import { AudioLines, Wind, Flame, PartyPopper  } from "lucide-react"
+import { AudioLines, Wind, Flame, PartyPopper } from "lucide-react"
 
 export default function BlowOutCandle() {
     const router = useRouter()
@@ -57,7 +57,9 @@ export default function BlowOutCandle() {
             setTimeout(() => {
                 setIsBlownOut(true)
                 setIsBlowing(false)
-                router.push("/home")
+                setTimeout(() => {
+                    router.push("/home")
+                }, 100)
             }, 500)
         }
     }
@@ -213,7 +215,7 @@ export default function BlowOutCandle() {
                     {/* Status Message */}
                     <div className="mt-6">
                         {isBlownOut ? (
-                            <p className="text-2xl text-white animate-bounce"> <PartyPopper className="inline w-5 h-5 mr-2"/> ប៉ងបំណងប្រាថ្នា! <PartyPopper className="inline w-5 h-5 mr-2"/> </p>
+                            <p className="text-2xl text-white animate-bounce"> <PartyPopper className="inline w-5 h-5 mr-2" /> ប៉ងបំណងប្រាថ្នា! <PartyPopper className="inline w-5 h-5 mr-2" /> </p>
                         ) : isListening ? (
                             <p className="text-xl text-green-300 animate-pulse"><AudioLines className="inline w-5 h-5 mr-2" /> និយាយ "blow" ដើម្បីផ្លុំពន្លត់ទៀន!</p>
                         ) : (
