@@ -13,7 +13,7 @@ const summaryImg = [
     { id: 2, img: "/sunflower/d2.png" },
     { id: 3, img: "/sunflower/d1.png" },
     { id: 4, img: "/sunflower/d4.png" },
-    { id: 5, img: "/sunflower/d3.png" },
+    // { id: 5, img: "/sunflower/d3.png" },
     { id: 6, img: "/sunflower/d5.png" },
 ];
 
@@ -39,7 +39,6 @@ export function FlowerSummary() {
     return (
         <>
             <section className="fs-section">
-                {/* BG decorations */}
                 <div className="fs-bg-circle" style={{ width: 400, height: 400, background: "radial-gradient(circle, #F2C99A18, transparent 70%)", top: -100, right: -100 }} />
                 <div className="fs-bg-circle" style={{ width: 280, height: 280, background: "radial-gradient(circle, #C0614A12, transparent 70%)", bottom: -60, left: -60 }} />
 
@@ -51,9 +50,7 @@ export function FlowerSummary() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-                        {/* Photos */}
                         <div>
-                            {/* Desktop bento grid */}
                             <div className="hidden md:grid fs-grid">
                                 {summaryImg.map((item, i) => (
                                     <div key={item.id} className="fs-grid-item" onClick={() => openAt(i)}>
@@ -63,7 +60,6 @@ export function FlowerSummary() {
                                 ))}
                             </div>
 
-                            {/* Mobile slider */}
                             <div className="md:hidden">
                                 <div className="fs-slider-wrap" onClick={() => openAt(current)}>
                                     <img className="fs-slider-img" src={summaryImg[current].img} alt="" />
@@ -78,7 +74,6 @@ export function FlowerSummary() {
                             </div>
                         </div>
 
-                        {/* Wishes */}
                         <div>
                             <div className="fs-wish-grid">
                                 {WISHES.map((w, i) => (
@@ -90,7 +85,7 @@ export function FlowerSummary() {
                             </div>
 
                             <div className="fs-cta">
-                                <p className="fs-cta-text">🎉 生日快樂！🎉</p>
+                                <p className="fs-cta-text">生日快樂！</p>
                                 <p className="fs-cta-sub">forever yours</p>
                             </div>
                         </div>
