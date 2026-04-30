@@ -786,3 +786,28 @@
 	color: #9B5840;
 	margin-top: 8px;
 }
+
+.pm-marquee-wrapper {
+	overflow: hidden;
+	width: 100%;
+}
+
+.pm-marquee-track {
+	display: flex;
+	gap: 20px;
+	animation: scroll 30s linear infinite;
+}
+
+.pm-marquee-track>* {
+	flex-shrink: 0;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
