@@ -134,23 +134,19 @@ export default function BlowOutCandle() {
                     }} />
             ))}
 
-            <div className="relative z-10 bg-white/70 backdrop-blur-sm rounded-[32px] shadow-[0_20px_60px_-15px_rgba(192,97,74,0.15)] p-10 md:p-12 border border-[#E8B86A]/20 text-center max-w-md w-full">
-
-                <h2 className="text-[#C0614A] text-2xl mb-6 font-medium" style={{ fontFamily: "Kantumruy Pro, sans-serif" }}>
-                    🎂 ផ្លុំទៀនថ្ងៃកំណើត
-                </h2>
+            <div className="relative z-10 bg-white/70 backdrop-blur-sm rounded-4xl shadow-[0_20px_60px_-15px_rgba(192,97,74,0.15)] p-10 md:p-12 border border-[#E8B86A]/20 text-center max-w-md w-full">
 
                 <div className="relative mx-auto transform transition-all duration-700 hover:scale-105" style={{ animation: "float 6s ease-in-out infinite" }}>
                     <div className="relative mx-auto">
-                        <div className="w-72 h-24 bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 rounded-lg mx-auto relative shadow-xl border-2 border-amber-700">
-                            <div className="absolute -top-2 left-0 right-0 h-6 bg-gradient-to-r from-pink-300 via-pink-200 to-pink-300 rounded-t-lg border-2 border-pink-400"></div>
+                        <div className="w-72 h-24 bg-linear-to-br from-amber-600 via-yellow-500 to-amber-600 rounded-lg mx-auto relative shadow-xl border-2 border-amber-700">
+                            <div className="absolute -top-2 left-0 right-0 h-6 bg-linear-to-br from-pink-300 via-pink-200 to-pink-300 rounded-t-lg border-2 border-pink-400"></div>
                             <div className="absolute top-2 left-4 w-3 h-3 bg-red-400 rounded-full"></div>
                             <div className="absolute top-2 right-4 w-3 h-3 bg-blue-400 rounded-full"></div>
                             <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-green-400 rounded-full"></div>
                         </div>
 
-                        <div className="w-56 h-20 bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-400 rounded-lg mx-auto relative -mt-2 shadow-xl border-2 border-orange-500">
-                            <div className="absolute -top-2 left-0 right-0 h-6 bg-gradient-to-r from-blue-300 via-blue-200 to-blue-300 rounded-t-lg border-2 border-blue-400"></div>
+                        <div className="w-56 h-20 bg-linear-to-br from-orange-400 via-yellow-400 to-orange-400 rounded-lg mx-auto relative -mt-2 shadow-xl border-2 border-orange-500">
+                            <div className="absolute -top-2 left-0 right-0 h-6 bg-linear-to-br from-blue-300 via-blue-200 to-blue-300 rounded-t-lg border-2 border-blue-400"></div>
                             <div className="absolute top-1 left-6 w-4 h-2 bg-white/80 rounded-full"></div>
                             <div className="absolute top-1 right-6 w-4 h-2 bg-white/80 rounded-full"></div>
                             <div className="absolute top-1 left-1/2 transform -translate-x-1/2 w-4 h-2 bg-white/80 rounded-full"></div>
@@ -158,7 +154,7 @@ export default function BlowOutCandle() {
 
                         <div className="absolute -top-20 left-1/2 transform -translate-x-1/2">
                             <div className="w-1 h-3 bg-gray-800 mx-auto -mt-1 rounded-sm"></div>
-                            <div className="w-4 h-16 bg-gradient-to-br from-red-400 via-red-500 to-red-600 rounded-sm mx-auto shadow-lg border border-red-700 relative">
+                            <div className="w-4 h-16 bg-linear-to-br from-red-400 via-red-500 to-red-600 rounded-sm mx-auto shadow-lg border border-red-700 relative">
                                 <div className="absolute top-2 left-0 right-0 h-px bg-red-700/30"></div>
                                 <div className="absolute top-6 left-0 right-0 h-px bg-red-700/30"></div>
                                 <div className="absolute top-10 left-0 right-0 h-px bg-red-700/30"></div>
@@ -170,8 +166,8 @@ export default function BlowOutCandle() {
                             {!isBlownOut && (
                                 <div className={`absolute -top-8 left-1/2 transform -translate-x-1/2 transition-all duration-500 ${isBlowing ? "animate-pulse scale-75 opacity-50" : ""}`}>
                                     <div className="relative">
-                                        <div className="w-5 h-8 bg-gradient-to-t from-orange-600 via-yellow-400 to-yellow-200 rounded-full animate-pulse shadow-lg" style={{ borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%" }}></div>
-                                        <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-3 h-5 bg-gradient-to-t from-red-500 via-orange-400 to-yellow-100 rounded-full animate-pulse" style={{ borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%" }}></div>
+                                        <div className="w-5 h-8 bg-linear-to-t from-orange-600 via-yellow-400 to-yellow-200 rounded-full animate-pulse shadow-lg" style={{ borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%" }}></div>
+                                        <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-3 h-5 bg-linear-to-t from-red-500 via-orange-400 to-yellow-100 rounded-full animate-pulse" style={{ borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%" }}></div>
                                         <div className="absolute top-3 left-1/2 transform -translate-x-1/2 w-1 h-3 bg-yellow-100 rounded-full animate-pulse"></div>
                                         <div className="absolute -inset-3 bg-yellow-300/20 rounded-full blur-md animate-pulse"></div>
                                     </div>
@@ -180,9 +176,9 @@ export default function BlowOutCandle() {
 
                             {isBlownOut && (
                                 <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                                    <div className="w-1 h-10 bg-gradient-to-t from-gray-500/70 to-transparent rounded-full animate-pulse"></div>
-                                    <div className="absolute top-0 left-1 w-1 h-8 bg-gradient-to-t from-gray-400/50 to-transparent rounded-full animate-pulse delay-100"></div>
-                                    <div className="absolute top-2 left-2 w-1 h-6 bg-gradient-to-t from-gray-300/30 to-transparent rounded-full animate-pulse delay-200"></div>
+                                    <div className="w-1 h-10 bg-linear-to-t from-gray-500/70 to-transparent rounded-full animate-pulse"></div>
+                                    <div className="absolute top-0 left-1 w-1 h-8 bg-linear-to-t from-gray-400/50 to-transparent rounded-full animate-pulse delay-100"></div>
+                                    <div className="absolute top-2 left-2 w-1 h-6 bg-linear-to-t from-gray-300/30 to-transparent rounded-full animate-pulse delay-200"></div>
                                 </div>
                             )}
                         </div>
@@ -245,7 +241,7 @@ export default function BlowOutCandle() {
                 </div>
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-[linear-gradient(90deg,#C0614A,#E8B86D,#D4845A,#E8B86D,#C0614A)] bg-[length:300%_100%] animate-[shimmer_4s_linear_infinite]" />
+            <div className="absolute bottom-0 left-0 right-0 h-0.75 bg-[linear-gradient(90deg,#C0614A,#E8B86D,#D4845A,#E8B86D,#C0614A)] bg-size-[300%_100%] animate-[shimmer_4s_linear_infinite]" />
 
             <style jsx global>{`
                 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600&display=swap');
